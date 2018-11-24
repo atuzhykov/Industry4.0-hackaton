@@ -16,9 +16,10 @@ model = TSNE(learning_rate=100)
 transformed = model.fit_transform(valid_data)
 x_axis = transformed[:, 0]
 y_axis = transformed[:, 1]
-
 plt.scatter(x_axis, y_axis)
 plt.show()
+# Reducing 4D-vector ( waterquality.tsm; waterquality.chla; waterquality.kd; waterquality.cpc ) to 2D space using tSNE algorythm
+
 
 
 

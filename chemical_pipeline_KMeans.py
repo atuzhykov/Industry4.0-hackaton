@@ -22,9 +22,13 @@ X = np.array(valid_data)
 kmeans = KMeans(n_clusters=4)  
 kmeans.fit(X) 
 ax.scatter(X[:,0],X[:,1],X[:,2], c=kmeans.labels_, cmap='rainbow') 
+ax.set_xlabel('waterquality.tsm')
+ax.set_ylabel('waterquality.chla')
+ax.set_zlabel('waterquality.kd')
+
 plt.show() 
 
-
+# 'Reducing 4D-vector ( waterquality.tsm; waterquality.chla; waterquality.kd; waterquality.cpc ) to 2D space using tSNE algorythm')
 
 
 
